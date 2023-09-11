@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .form{
+
+            width: 800px;
+            height: 500px;
+            text-align: center;
+            box-sizing: border-box;
+            border-width: 20px 120px 20px 120px; /* top, right, bottom, left */
+            border-color: rgb(168, 38, 82);
+            border-style: solid;
+            display: flex;
+            margin: 100px 50px;
+            background-color: rgb(108, 14, 61);
+            justify-content: center;
+            
+    
+
+
+
+        }
+        form{
+            position: relative;
+            top: 20px;
+        }
+        label{
+            
+            color: white;
+            width: 100px;
+            display: inline-block;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+        button{
+            border-radius: 5px;
+            font-size: large;
+            font-weight:bolder;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <title>Task 12</title>
+</head>
+<body>
+    <center>
+        <div class="form" >
+            <form>
+                <label for="name" style="position:fixed;left:560px;"> Name:</label>
+                <input type="text" id="name" placeholder="your name" style="position:fixed;left:735px;" required><br><br>
+                <label for="email"style="position:fixed;left:560px;" >Email:  </label></th>
+                <input type="email"id="lname" placeholder="your email" style="position:fixed;left:735px;" required><br><br>
+                <label for="password" style="position:fixed;left:575px;">Password:</label>
+                <input type="password" id="name" style="position:fixed;left:735px;" required><br><br>
+                <label for="phone" style="position:fixed;left:585px;">Phonenumber:</label>
+                <input type="tel"id="phone" style="position:fixed;left:735px;"  required><br><br>
+                <label for="gender" style="position:fixed;left:565px;">Gender</label>
+                <label for="male" style="position:fixed;left:710px;" >Male:</label>
+                <input type="radio"id="gender"value="Male" name="gender" style="position:fixed;left:780px;">
+                <label for="female" style="position:fixed;left:785px;">Female:</label>
+                <input type="radio"id="gender" value="Female" name="gender"style="position:fixed;left:865px;" >
+                <label for="other" style="position:fixed;left:865px;" >Other:</label>
+                <input type="radio"id="gender" value="other" name="gender" style="position:fixed;left:940px;" ><br><br>
+                <label for="language" style="position:fixed;left:575px;" >Language</label>
+                <select name="country" id="country" style="position:fixed;left:735px;" >
+                <option value="" disabled selected> Select language</option>
+                <option value="english">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Malayalam">Malayalam</option></select><br><br>
+                <label for="zip"style="position:fixed;left:570px;" >Zip code</label>
+                <input type="tel" id="zip" name="zip" style="position:fixed;left:735px;"><br><br>
+                <label for="address"style="position:fixed;left:563px;" >About:</label>
+                <textarea id="address" name="address" placeholder="write about yourself..." style="position:fixed;left:735px;"></textarea><br><br>
+                <button type="submit"style="position:fixed;left:580px;top:60%;width:360px;height:50px;">Register</button>
+                
+    
+    
+    
+    
+    
+    
+    
+            </form>
+    
+        </div>
+    </center>
+   
+</body>
+</html>

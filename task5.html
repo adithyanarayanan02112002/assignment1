@@ -1,0 +1,112 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    
+    .save-button {
+        position:absolute;
+        top: 510px;
+        left: 320px;
+    }
+    .al{
+        position:relative;
+        left: 220px;
+    }
+
+    table, th, td {
+       border: 1px solid black;
+      border-collapse: collapse;
+    }
+   </style>
+    <title>task 5</title>
+</head>
+<body>
+    <h1 class="al"><font color="#0000FF">Registration Form</font></h1>
+    <form>
+       <table style="width:50%">
+        
+            <tr>
+                <th><label for="fname">First name</label></th>
+                <th style="width:70%"><input type="text"id="fname" size="80"required></th>
+            </tr>
+            <tr>
+                <th><label for="lname">Last name</label></th>
+                <td><input type="text"id="lname" size="80" required></td>
+            </tr>
+            <tr>
+                <th><label for="email">Email</label></th>
+                <td><input type="email"id="lname" size="80" required></td>
+            </tr>
+            <tr>
+                <th><label for="pass">Password</label></th>
+                <td><input type="password"id="pass"  size="80" required></td>
+            </tr>
+            <tr>
+                <th><label for="repass">Re-enter Password</label></th>
+                <td><input type="password"id="repass"  size="80" required></td>
+            </tr>
+            <tr>
+                <th rowspan="2"><label for="gender">Gender</label></th>
+                <td><input type="radio"id="gender"value="Male" name="gender" size="80" ><label for="male">Male</label></td>
+            </tr>
+            <tr>
+                <td><input type="radio"id="gender" value="Female" name="gender"  size="80" ><label for="female">Female</label></td>
+            </tr> 
+            <tr>
+                <th><label for="age">Age</label></th>
+                <td><input type="number"id="age" min="2" max="200" step="1" size="80" required></td>
+            </tr>
+            <tr>
+                <th><label for="phone">Phone number</label></th>
+                <td><input type="tel"id="phone" size="80" required></td>
+            </tr> 
+            <tr>
+                <th><label for="box">Address</label></th>
+                <td><textarea id="box"rows="5"cols="75"></textarea></td>
+            </tr>
+            <tr>
+                <th><label for="state">State</label></th>
+                <td><input type="text"id="state" size="80" required></td>
+            </tr>
+            <tr>
+                <th><label for="country">Country</label></th>
+                <td><select name="country" id="country" >
+                    <option value="" disabled selected>Choose your country</option>
+                    <option value="india">india</option>
+                    <option value="Turkmenistan">Turkmenistan</option>
+                    <option value="Djibouti">Djibouti</option>
+                    <option value="usbekistan">usbekistan</option>
+                    <option value="Liechtenstein">Liechtenstein</option>
+                </select></td>
+            </tr>
+            <tr>
+                <th>Languages known</th>
+                <td><label for="English">English</label>
+                    <input type="checkbox" id="English" name="English">
+                    <label for="Kannada">Kannada</label>
+                    <input type="checkbox" id="Kannada" name="Kannada">
+                    <label for="Hindi">Hindi</label>
+                    <input type="checkbox" id="Hindi" name="Hindi">
+                    <label for="Telugu">Telugu</label>
+                    <input type="checkbox" id="Telugu" name="Telugu">
+            </tr>
+        <tr>
+            <td colspan="2"><input type="checkbox" id="agree" name="agree">
+                <label for="agree">Hereby I declare all the given details are true</label></td>
+        </tr>
+        <tr>
+            <td style="text-align: right;"colspan="2">Login in to
+                <a href="https://codemithra.com" target="_self">Ethnus</a>website
+            </td>
+        </tr>
+
+       </table>
+       <div class="save-button"><button type="submit">Register</button></div>
+       
+    </form>
+</body>
+</html>
